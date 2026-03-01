@@ -1,0 +1,5 @@
+{
+  "name": "GitPulse",
+  "description": "A dynamic GitHub profile visualizer and AI-powered developer portfolio analyzer.",
+  "requestFramePermissions": []
+}

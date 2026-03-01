@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-github-dark: #0d1117;
+  --color-github-card: #161b22;
+  --color-github-border: #30363d;
+  --color-github-accent: #58a6ff;
+  --color-github-text: #c9d1d9;
+  --color-github-muted: #8b949e;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-github-dark);
+    color: var(--color-github-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background-color: var(--color-github-card);
+    border: 1px solid var(--color-github-border);
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+
+  .repo-card {
+    background-color: var(--color-github-card);
+    border: 1px solid var(--color-github-border);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .repo-card:hover {
+    border-color: rgba(88, 166, 255, 0.5);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  .stat-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--color-github-muted);
+  }
+}
+
