@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Search, Github, Loader2, AlertCircle, Terminal, Code2, LayoutGrid } from 'lucide-react';
+import { Search, Panda, Loader2, AlertCircle, Terminal, Code2, LayoutGrid } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { githubService } from './services/githubService';
 import { geminiService } from './services/geminiService';
@@ -65,7 +65,7 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-github-dark/80 backdrop-blur-md border-b border-github-border py-4 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => setUsername('KaivalyaR-N')}>
-            <Github className="text-white" size={32} />
+            <Panda className="text-white" size={32} />
             <span className="text-2xl font-bold text-white tracking-tight">GitPulse</span>
           </div>
           
