@@ -118,12 +118,6 @@ Make sure `.env` is added to `.gitignore`.
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots of your UI here)
-
----
-
 ## 🌐 Future Improvements
 
 * GitHub contribution graph
